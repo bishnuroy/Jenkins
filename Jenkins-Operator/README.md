@@ -95,6 +95,7 @@ Here I have tested with VMDK dynamic storage.
 - 1st ddeploye Operator file
   - https://github.com/bishnuroy/Jenkins/blob/master/Jenkins-Operator/operator.yaml
     - kubectl --kubeconfig KUBECONFIG_FILEPATH apply -f operator.yaml
-- Now replace "testjk01" with the username from all [jenkins-cr.yaml](https://github.com/bishnuroy/Jenkins/blob/master/Jenkins-Operator/jenkins-cr.yaml) file  
+- Now replace "testjk01" with the username from [jenkins-cr.yaml](https://github.com/bishnuroy/Jenkins/blob/master/Jenkins-Operator/jenkins-cr.yaml) file and deploy it.
+ - - kubectl --kubeconfig KUBECONFIG_FILEPATH apply -f jenkins-cr.yaml
 
 
