@@ -18,7 +18,7 @@ data:
                 #fromGroupSearch:
                 fromUserRecord:
                    attributeName: "member"
-                   #filter: "cn=analytics_test" 
+                   #filter: "cn=test" 
               rootDN: "ou=test01,ou=br,o=example.com"
               userSearchBase: "ou=People"
               userSearch: "uid={0}"
@@ -202,4 +202,4 @@ spec:
   tls:
   - hosts:
     - jenkins-testjk01.test01.exaample.com
-    secretName: ccp-ingress-default-cert
+    secretName: ingress-default-cert
