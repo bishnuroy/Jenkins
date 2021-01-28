@@ -11,7 +11,7 @@
   - image: jenkins/jenkins:lts
  
 
-Base Plugin Version details:
+**Base Plugin Version details:** add and remove plugin as per you need in cr file.
 ```
  basePlugins: 
     - name: kubernetes
@@ -88,4 +88,13 @@ data:
 **BackUp:**
 
 Here I have tested with VMDK dynamic storage.
+
+**Deployment:**
+
+- I have integrated this deployment with LDAP authentication.
+- 1st ddeploye Operator file
+  - https://github.com/bishnuroy/Jenkins/blob/master/Jenkins-Operator/operator.yaml
+    - kubectl --kubeconfig KUBECONFIG_FILEPATH apply -f operator.yaml
+- Now replace "testjk01" with the username from all [jenkins-cr.yaml](https://github.com/bishnuroy/Jenkins/blob/master/Jenkins-Operator/jenkins-cr.yaml) file  
+
 
